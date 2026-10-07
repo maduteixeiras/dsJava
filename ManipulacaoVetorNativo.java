@@ -1,4 +1,6 @@
 import java.util.Arrays; 
+
+// Como estamos lidando com Vetores Nativos, precisamos importar a biblioteca Arrays para fazer a manipilação desses Vetores atraves de métodos da classe Arrays
 public class ManipulacaoVetorNativo {
     public static void main(String[] args) {
         
@@ -25,7 +27,6 @@ public class ManipulacaoVetorNativo {
 
         // Arrays.binarySearch(vetor,valor) - Busca a posição de um elemento no vetor (requer que o vetor já esteja ordenado).
 
-        Arrays.sort(numeros); // binarySearch só funciona corretamente se o array estiver previamente ordenado. Por isso, o Arrays.sort() deve vir antes da busca.
         int posicao = Arrays.binarySearch(numeros, 200);
         if (posicao >= 0) {
             System.out.println("\nO número 200 está na posição " + posicao);
@@ -33,6 +34,13 @@ public class ManipulacaoVetorNativo {
             System.out.println("\nPosição não encontrada");
         }
         
+        // Arrays.fill(vetor, num) - Preenche automaticamente um vetor com todas as posições tendo o mesmo valor
+        int[] oito = new int[5];
+        Arrays.fill(oito, 8);
+        for (int i : oito) {
+            System.out.println(i);
+            
+        }
     }
     
 }
