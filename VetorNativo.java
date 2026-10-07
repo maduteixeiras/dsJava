@@ -1,4 +1,4 @@
-public class Vetores {
+public class VetorNativo {
     public static void main(String[] args) {
 
     int[] colecaoDeInteiros = {1,2,3};
@@ -6,15 +6,17 @@ public class Vetores {
     // Dessa maneira, já inicializamos o vetor com um determinado valor\comprimento e não conseguimos mais alterar ou adicionar novos elementos.
 
     // mostrar comprimento do vetor - length
-    // O .length é um atributo do vetor que retorna o tamanho (número de elementos) do vetor
+    // O .length é o único atributo próptio de vetor nativo .
+    // ELe que retorna o tamanho (número de elementos) do vetor
     System.out.println("Tamanho do vetor coleção de inteiros: " + colecaoDeInteiros.length);
-    String[] colecaoDeNomes = {"Maria", "Carla"};
+    String[] colecaoDeNomes = {"Maria", "Carla", "Carolina"};
     System.out.println(colecaoDeNomes[1]);
 
     
-    int n[] = {1,2,9,4};
+    int n[] = {1,97,12,5,75, 4};
         for (int i = 0; i < n.length - 1; i++){
             System.out.println(n[i]);
+
         }
 
         
